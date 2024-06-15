@@ -58,7 +58,10 @@ onUnmounted(() => {
         <p><strong>Phone:</strong> {{ user.phone }}</p>
         <p><strong>Website:</strong> <a :href="'http://' + user.website" target="_blank">{{ user.website }}</a></p>
         <p><strong>Company:</strong> {{ user.company.name }}</p>
+        <p><strong>Company phrase:</strong> {{ user.company.catchPhrase }}</p>
+        <p><strong>Company bs:</strong> {{ user.company.bs }}</p>
         <p><strong>Address:</strong> {{ user.address.street }}, {{ user.address.suite }}, {{ user.address.city }}, {{ user.address.zipcode }}</p>
+        <p><strong>geo:</strong> lat:{{ user.address.geo.lat }}, lng: {{ user.address.geo.lng}}</p>
     </div>
     <div v-else>
       <p>Загрузка...</p>
