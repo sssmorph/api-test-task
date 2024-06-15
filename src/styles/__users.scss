@@ -1,0 +1,59 @@
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: auto;
+}
+li{
+    width: 200px;
+}
+button{
+    width: 100%;
+}
+
+.users-title{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.users-list{
+    padding: 15px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.user-button{
+    border: 1px solid red;
+    transition: all ease-in-out 0.2s;
+    display: flex;
+}   
+.user-link{
+    transition: all ease-in-out 0.2s;   
+    width: 100%;
+}
+.user-button:hover{
+    background-color: red;
+    transition: all ease-in-out 0.2s;
+    .user-link{
+        color: white;
+        transition: all ease-in-out 0.2s;
+    }
+}
+.new-user{
+    padding: 2px 3px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    display: flex;
+}
+.new-user:hover{
+    background-color: rgba(0,0,0,  0.3);
+}
+.user-information-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
